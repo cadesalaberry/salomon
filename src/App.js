@@ -27,26 +27,18 @@ export default class App extends Component {
   render() {
     console.log(this.state.opened);
     var home = 'home';
-    var left = 'left';
-    var right = 'right'
-    var leftTitle = 'title left-title';
-    var rightTitle = 'title right-title';
 
     home += this.state.tab !== 'home'
     ? ' home--' + this.state.tab
     : '';
-    
-    left += this.state.opened
-    ? ' left--opened'
-    : '';
 
-    right += this.state.opened
-    ? ' right--opened'
+    home += this.state.opened
+    ? ' home--opened'
     : '';
 
     return (
-      <h1 className={ home } onClick={this.clickHome.bind(this)}>
-        <div className={ left }>
+      <div className={ home } onClick={this.clickHome.bind(this)}>
+        <div className="left">
           <div className="title">
             <div className="text">De l’Inspiration</div>
           </div>
@@ -54,7 +46,7 @@ export default class App extends Component {
             <div className="text">LA VILLA WEISSENHOF</div>
           </div>
         </div>
-        <div className={ right }>
+        <div className="right">
           <div className="title">
             <div className="text">...À la Création</div>
           </div>
@@ -62,7 +54,8 @@ export default class App extends Component {
             <div className="text">LA MAQUETTE DE ROMANE</div>
           </div>
         </div>
-      </h1>
+        <div className="main-subtitle">PROJET DE L’ARCHITECTE ROMANE SALOMON</div>
+      </div>
     );
   }
 }
