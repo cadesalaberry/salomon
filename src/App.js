@@ -25,8 +25,9 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.opened);
     var home = 'home';
+    var tbVilla = 'toolbar toolbar--villa';
+    var tbModel = 'toolbar toolbar--model';
 
     home += this.state.tab !== 'home'
     ? ' home--' + this.state.tab
@@ -34,6 +35,14 @@ export default class App extends Component {
 
     home += this.state.opened
     ? ' home--opened'
+    : '';
+
+    tbVilla += this.state.tab === 'villa'
+    ? ' toolbar--opened'
+    : '';
+
+    tbModel += this.state.tab === 'villa'
+    ? ' toolbar--opened'
     : '';
 
     return (
@@ -55,6 +64,37 @@ export default class App extends Component {
           </div>
         </div>
         <div className="main-subtitle">PROJET DE L’ARCHITECTE ROMANE SALOMON</div>
+
+        <div className={ tbVilla }>
+          <div className="subtitle subtitle--black">
+            <div className="text">STRUCTURE</div>
+          </div>
+          <div className="subtitle subtitle--beige">
+            <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
+          </div>
+          <div className="subtitle subtitle--orenge">
+            <div className="text">PILOTIS FENÊTRE BANDEAU</div>
+          </div>
+          <div className="subtitle subtitle--orenge">
+            <div className="text">TOIT TERRASSE PLAN LIBRE</div>
+          </div>
+        </div>
+
+        <div className={ tbModel }>
+          <div className="subtitle subtitle--black">
+            <div className="text">STRUCTURE</div>
+          </div>
+          <div className="subtitle subtitle--beige">
+            <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
+          </div>
+          <div className="subtitle subtitle--orenge">
+            <div className="text">PILOTIS FENÊTRE BANDEAU</div>
+          </div>
+          <div className="subtitle subtitle--orenge">
+            <div className="text">TOIT TERRASSE PLAN LIBRE</div>
+          </div>
+        </div>
+
       </div>
     );
   }
