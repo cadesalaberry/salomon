@@ -186,4 +186,14 @@ table {
   width: 300px;
   bottom: 3rem;
   font-size: large;
+  transition: all .3s ease;
+}
+
+.home--opened > .main-subtitle {
+  color: black;
+}
+
+.home--villa > .main-subtitle,
+.home--villa > .main-subtitle {
+  bottom: -3rem;
 }
