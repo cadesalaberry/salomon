@@ -55,7 +55,7 @@ export default class App extends Component {
           <div className="title">
             <div className="text">De l’Inspiration</div>
           </div>
-          <div className="subtitle" onClick={this.clickVilla.bind(this)}>
+          <div className="subtitle color--grey" onClick={this.clickVilla.bind(this)}>
             <div className="text">LA VILLA WEISSENHOF</div>
           </div>
         </div>
@@ -63,38 +63,38 @@ export default class App extends Component {
           <div className="title">
             <div className="text">...À la Création</div>
           </div>
-          <div className="subtitle" onClick={this.clickModel.bind(this)}>
+          <div className="subtitle color--beige" onClick={this.clickModel.bind(this)}>
             <div className="text">LA MAQUETTE DE ROMANE</div>
           </div>
         </div>
         <div className="main-subtitle">PROJET DE L’ARCHITECTE ROMANE SALOMON</div>
 
         <div className={ tbVilla }>
-          <div className="tool tool--black">
+          <div className="tool color--black">
             <div className="text">STRUCTURE</div>
           </div>
-          <div className="tool tool--beige">
+          <div className="tool color--beige">
             <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
           </div>
-          <div className="tool tool--orange">
+          <div className="tool color--orange">
             <div className="text">PILOTIS FENÊTRE BANDEAU</div>
           </div>
-          <div className="tool tool--grey">
+          <div className="tool color--grey">
             <div className="text">TOIT TERRASSE PLAN LIBRE</div>
           </div>
         </div>
 
         <div className={ tbModel }>
-          <div className="tool tool--black">
+          <div className="tool color--black">
             <div className="text">STRUCTURE</div>
           </div>
-          <div className="tool tool--beige">
+          <div className="tool color--beige">
             <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
           </div>
-          <div className="tool tool--orange">
+          <div className="tool color--orange">
             <div className="text">PILOTIS FENÊTRE BANDEAU</div>
           </div>
-          <div className="tool tool--grey">
+          <div className="tool color--grey">
             <div className="text">TOIT TERRASSE PLAN LIBRE</div>
           </div>
         </div>

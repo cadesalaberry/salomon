@@ -230,22 +230,22 @@ table {
   transform: rotate(-90deg);
 }
 
-.tool--beige {
-  background-color: beige;
+.color--beige {
+  background-color: #f0c8a1;
   color: black;
 }
 
-.tool--black {
+.color--black {
   background-color: black;
   color: white;
 }
 
-.tool--orange {
-  background-color: orange;
-  color: white;
+.color--orange {
+  background-color: #e74011;
+  color: black;
 }
 
-.tool--grey {
-  background-color: grey;
-  color: white;
+.color--grey {
+  background-color: #bfbfbf;
+  color: black;
 }
