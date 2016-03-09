@@ -148,6 +148,7 @@ table {
   top: 100%;
   width: 0;
   right: 0;
+  cursor: pointer;
 }
 
 .home--opened > .left > .subtitle {
@@ -206,8 +207,8 @@ table {
   margin-left: auto;
   margin-right: auto;
   width: 12rem;
-  height: 200px;
-  bottom: -200px;
+  height: 170px;
+  bottom: -170px;
   font-size: large;
   transition: all .7s ease;
   background: black;
@@ -224,9 +225,12 @@ table {
   width: 3rem;
 }
 
+.tool:hover {
+  cursor: pointer;
+}
 .tool > .text {
   font-size: small;
-  top: 150px;
+  top: 130px;
   transform: rotate(-90deg);
 }
 
