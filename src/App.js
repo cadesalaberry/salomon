@@ -99,6 +99,18 @@ export default class App extends Component {
           </div>
         </div>
 
+        <div className="tab tab--villa color--black">
+          <div className="tab-content">
+            ANIMATION
+          </div>
+        </div>
+
+        <div className="tab tab--model color--black">
+          <div className="tab-content">
+            ANIMATION
+          </div>
+        </div>
+
       </div>
     );
   }

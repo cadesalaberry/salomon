@@ -253,3 +253,34 @@ table {
   background-color: #bfbfbf;
   color: black;
 }
+
+.tab {
+  position: absolute;
+  display: flex;
+  top: 5rem;
+  width: calc(70% - 4rem);
+  height: 50%;
+  transition: all .7s ease;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home--villa > .tab--villa {
+  left: 0;
+}
+.tab--villa {
+  left: -70%;
+}
+
+.home--model > .tab--model {
+  right: 0;
+}
+.tab--model {
+  right: -70%;
+}
+
+.tab-content {
+
+}
