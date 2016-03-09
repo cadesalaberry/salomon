@@ -197,3 +197,55 @@ table {
 .home--model > .main-subtitle {
   bottom: -3rem;
 }
+
+.toolbar {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12rem;
+  height: 200px;
+  bottom: -200px;
+  font-size: large;
+  transition: all .7s ease;
+  background: black;
+  color: white;
+  z-index: 1;
+}
+
+.toolbar--opened {
+  bottom: 0;
+}
+
+.toolbar > .tool {
+  height: 100%;
+  width: 3rem;
+}
+
+.tool > .text {
+  font-size: small;
+  top: 150px;
+  transform: rotate(-90deg);
+}
+
+.tool--beige {
+  background-color: beige;
+  color: black;
+}
+
+.tool--black {
+  background-color: black;
+  color: white;
+}
+
+.tool--orange {
+  background-color: orange;
+  color: white;
+}
+
+.tool--grey {
+  background-color: grey;
+  color: white;
+}

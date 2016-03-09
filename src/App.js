@@ -10,18 +10,22 @@ export default class App extends Component {
   }
 
   clickHome() {
-    console.log('Clicked');
+    console.log('Clicked Home');
     this.setState({ opened: true });
   }
 
   clickVilla() {
-    console.log('Clicked villa');
-    this.setState({ tab: 'villa' });
+    console.log('Clicked Villa');
+    this.state.tab === 'home'
+    ? this.setState({ tab: 'villa' })
+    : this.setState({ tab: 'home' });
   }
 
   clickModel() {
-    console.log('Clicked villa');
-    this.setState({ tab: 'model' });
+    console.log('Clicked Model');
+    this.state.tab === 'home'
+    ? this.setState({ tab: 'model' })
+    : this.setState({ tab: 'home' });
   }
 
   render() {
@@ -41,7 +45,7 @@ export default class App extends Component {
     ? ' toolbar--opened'
     : '';
 
-    tbModel += this.state.tab === 'villa'
+    tbModel += this.state.tab === 'model'
     ? ' toolbar--opened'
     : '';
 
@@ -66,31 +70,31 @@ export default class App extends Component {
         <div className="main-subtitle">PROJET DE L’ARCHITECTE ROMANE SALOMON</div>
 
         <div className={ tbVilla }>
-          <div className="subtitle subtitle--black">
+          <div className="tool tool--black">
             <div className="text">STRUCTURE</div>
           </div>
-          <div className="subtitle subtitle--beige">
+          <div className="tool tool--beige">
             <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
           </div>
-          <div className="subtitle subtitle--orenge">
+          <div className="tool tool--orange">
             <div className="text">PILOTIS FENÊTRE BANDEAU</div>
           </div>
-          <div className="subtitle subtitle--orenge">
+          <div className="tool tool--grey">
             <div className="text">TOIT TERRASSE PLAN LIBRE</div>
           </div>
         </div>
 
         <div className={ tbModel }>
-          <div className="subtitle subtitle--black">
+          <div className="tool tool--black">
             <div className="text">STRUCTURE</div>
           </div>
-          <div className="subtitle subtitle--beige">
+          <div className="tool tool--beige">
             <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
           </div>
-          <div className="subtitle subtitle--orenge">
+          <div className="tool tool--orange">
             <div className="text">PILOTIS FENÊTRE BANDEAU</div>
           </div>
-          <div className="subtitle subtitle--orenge">
+          <div className="tool tool--grey">
             <div className="text">TOIT TERRASSE PLAN LIBRE</div>
           </div>
         </div>
