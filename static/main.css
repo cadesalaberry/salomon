@@ -139,7 +139,8 @@ table {
   position: absolute;
   margin-top: auto;
   background-color: grey;
-  transition: top 1.2s ease;
+  transition: top .7s ease;
+  transition-delay: .9s;
   height: 100vh;
   top: 100%;
   width: 0;
