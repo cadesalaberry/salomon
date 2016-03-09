@@ -71,6 +71,8 @@ table {
   text-align: right;
   height: 100vh;
   width: 50%;
+  transition: margin-left .7s;
+  margin-left: 0;
 }
 
 .left--opened {
@@ -80,14 +82,16 @@ table {
 .right {
   position: relative;
   background-color: black;
-  transition: all .5s;
+  transition: all .7s;
   align-self: flex-end;
   height: 100vh;
   width: 50%;
-  margin-left: auto;
+  transition: margin-left .7s;
+  margin-left: 0;
 }
 
 .right--opened {
+  margin-left: calc(100% - 12rem);
   width: 6rem;
 }
 
@@ -160,4 +164,16 @@ table {
 .subtitle > .text {
   top: 90%;
   transform: rotate(-90deg);
+}
+
+.home--villa > .left {
+  margin-left: calc(100% - 12rem);
+}
+
+.home--villa > .right {
+  margin-left: 0;
+}
+
+.home--model > .right {
+  margin-left: 0;
 }
