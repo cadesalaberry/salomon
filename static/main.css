@@ -68,7 +68,9 @@ table {
   font-family: oswald_regularregular;
   font-size: x-large;
   text-transform: uppercase;
-  background-color: #EBEBEB;
+  /* The background is white on mac(safari/firefox/chrome)*/
+  /* The background is #EBEBEB on linux(firefox/chrome)*/
+  /*background-color: #EBEBEB;*/
 }
 
 .left {
