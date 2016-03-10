@@ -272,19 +272,21 @@ table {
   transition: all .7s ease;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .home--villa > .tab--villa {
-  left: 0;
+  left: 10%;
 }
 .tab--villa {
   left: -70%;
 }
 
 .home--model > .tab--model {
-  right: 0;
+  right: 10%;
 }
 .tab--model {
   right: -70%;
