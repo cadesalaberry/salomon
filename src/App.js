@@ -13,8 +13,8 @@ export default class App extends Component {
     console.log('Clicked Home');
     this.setState({ opened: true });
 
-    var modelVilla = document.getElementById('#villa-player');
-    var modelVideo = document.getElementById('#model-player');
+    var modelVilla = document.getElementById('villa-player');
+    var modelVideo = document.getElementById('model-player');
     modelVideo.load();
     modelVilla.load();
     modelVideo.pause();
