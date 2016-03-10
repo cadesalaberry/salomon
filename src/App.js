@@ -53,7 +53,7 @@ export default class App extends Component {
       <div className={ home } onClick={this.clickHome.bind(this)}>
         <div className="left">
           <div className="title">
-            <div className="text">De l’Inspiration</div>
+            <div className="text">De l’Inspiration...</div>
           </div>
           <div className="subtitle color--grey" onClick={this.clickVilla.bind(this)}>
             <div className="text">LA VILLA WEISSENHOF</div>
@@ -61,7 +61,7 @@ export default class App extends Component {
         </div>
         <div className="right">
           <div className="title">
-            <div className="text">...À la Création</div>
+            <div className="text">À la Création</div>
           </div>
           <div className="subtitle color--beige" onClick={this.clickModel.bind(this)}>
             <div className="text">LA MAQUETTE DE ROMANE</div>

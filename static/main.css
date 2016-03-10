@@ -111,11 +111,14 @@ table {
   height: 100vh;
 }
 
-.home--opened > .left > .title {
-  width: 3rem;
+.home > .left > .title,
+.home > .right > .title {
+  font-size: 3rem;
 }
 
+.home--opened > .left > .title,
 .home--opened > .right > .title {
+  font-size: x-large;
   width: 3rem;
 }
 
@@ -191,7 +194,7 @@ table {
   margin-right: auto;
   width: 300px;
   bottom: 3rem;
-  font-size: large;
+  font-size: medium;
   transition: all .3s ease;
 }
 
