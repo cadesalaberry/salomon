@@ -12,6 +12,14 @@ export default class App extends Component {
   clickHome() {
     console.log('Clicked Home');
     this.setState({ opened: true });
+
+    var modelVilla = document.getElementById('#villa-player');
+    var modelVideo = document.getElementById('#model-player');
+    modelVideo.load();
+    modelVilla.load();
+    modelVideo.pause();
+    modelVilla.pause();
+
   }
 
   clickVilla() {
@@ -19,6 +27,11 @@ export default class App extends Component {
     this.state.tab === 'home'
     ? this.setState({ tab: 'villa' })
     : this.setState({ tab: 'home' });
+
+    var video = document.getElementById('villa-player');
+    video.pause();
+    video.currentTime = 0;
+    video.play();
   }
 
   clickModel() {
@@ -26,6 +39,11 @@ export default class App extends Component {
     this.state.tab === 'home'
     ? this.setState({ tab: 'model' })
     : this.setState({ tab: 'home' });
+
+    var video = document.getElementById('model-player');
+    video.pause();
+    video.currentTime = 0;
+    video.play();
   }
 
   render() {
@@ -101,7 +119,7 @@ export default class App extends Component {
 
         <div className="tab tab--villa">
           <div className="tab-content">
-            <video width="100%" height="100%" controls>
+            <video id="villa-player" width="100%" height="100%">
               <source src="./static/villa.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -110,7 +128,7 @@ export default class App extends Component {
 
         <div className="tab tab--model">
           <div className="tab-content">
-            <video width="100%" height="100%" controls>
+            <video id="model-player" width="100%" height="100%">
               <source src="./static/model.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
