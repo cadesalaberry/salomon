@@ -84,13 +84,13 @@ export default class App extends Component {
             <div className="text">STRUCTURE</div>
           </div>
           <div className="tool color--beige">
-            <div className="text">FAÇADE LIBRE ESCALIER, PORTE</div>
+            <div className="text">FAÇADE LIBRE, ESCALIER, PORTE</div>
           </div>
           <div className="tool color--orange">
-            <div className="text">PILOTIS FENÊTRE BANDEAU</div>
+            <div className="text">PILOTIS, FENÊTRE BANDEAU</div>
           </div>
           <div className="tool color--grey">
-            <div className="text">TOIT TERRASSE PLAN LIBRE</div>
+            <div className="text">TOIT, TERRASSE, PLAN LIBRE</div>
           </div>
         </div>
 
