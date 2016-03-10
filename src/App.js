@@ -99,15 +99,21 @@ export default class App extends Component {
           </div>
         </div>
 
-        <div className="tab tab--villa color--black">
+        <div className="tab tab--villa">
           <div className="tab-content">
-            ANIMATION
+            <video width="100%" height="100%" controls>
+              <source src="./static/villa.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
-        <div className="tab tab--model color--black">
+        <div className="tab tab--model">
           <div className="tab-content">
-            ANIMATION
+            <video width="100%" height="100%" controls>
+              <source src="./static/model.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
